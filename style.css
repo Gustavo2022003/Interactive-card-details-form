@@ -214,8 +214,8 @@ input::-webkit-inner-spin-button {
 }
 
 .footer {
-    position: absolute;
-    bottom: 0;
+    position: fixed;
+    bottom: 0px;
     right: 20px;
     color: #00000063;
 }
@@ -279,6 +279,40 @@ body::-webkit-scrollbar-thumb {
     .card-logo {
         width: 80px;
     }
+
+        /*ERRORS*/
+
+        .input-error {
+            border: 1px solid #d64040;
+        }
+    
+        .text-error {
+            margin-top: 10px;
+            font-size: 10px;
+            color: #d64040;
+            width: 148.297px;
+            height: 21px;
+        }
+    
+        .text-error-number {
+            margin-top: 10px;
+            font-size: 10px;
+            color: #d64040;
+            width: 200px;
+            height: 21px;
+        }
+    
+        .text-error-cvc {
+            display: inline-block;
+            position: relative;
+            text-align: start;
+            top: 0px;
+            left: 0px;
+            width: 191.297px;
+            height: 21px;
+            font-size: 10px;
+            color: #d64040;
+        }
 }
 
 @media screen and (max-width: 1190px) {
@@ -321,6 +355,40 @@ body::-webkit-scrollbar-thumb {
     .card-logo {
         width: 40px;
     }
+
+    /*ERRORS*/
+
+    .input-error {
+        border: 1px solid #d64040;
+    }
+
+    .text-error {
+        margin-top: 10px;
+        font-size: 10px;
+        color: #d64040;
+        width: 148.297px;
+        height: 21px;
+    }
+
+    .text-error-number {
+        margin-top: 10px;
+        font-size: 10px;
+        color: #d64040;
+        width: 200px;
+        height: 21px;
+    }
+
+    .text-error-cvc {
+        display: inline-block;
+        position: relative;
+        text-align: start;
+        top: 0px;
+        left: 0px;
+        width: 191.297px;
+        height: 21px;
+        font-size: 10px;
+        color: #d64040;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -359,11 +427,32 @@ body::-webkit-scrollbar-thumb {
         height: 135px;
         width: 246px;
         position: absolute;
-        top: 140px;
+        top: 90px;
         left: 30%;
         padding: 20px;
         background-size: cover;
         background-size: contain;
+    }
+
+    .card-info .number {
+        color: white;
+        font-size: 2vw;
+    }
+    
+    .card-info .name {
+        color: white;
+        font-size: 1.0vw;
+        margin-top: 10px;
+        display: inline-block;
+    }
+    
+    .card-info .date {
+        color: white;
+        font-size: 1.5vw;
+        margin-top: 10px;
+        display: inline-block;
+        position: absolute;
+        right: 30px;
     }
     
     .card-back {
@@ -371,7 +460,7 @@ body::-webkit-scrollbar-thumb {
         height: 135px;
         width: 246px;
         position: absolute;
-        top: 260px;
+        top: 200px;
         left: 40%;
         background-size: cover;
         background-size: contain;
@@ -384,10 +473,10 @@ body::-webkit-scrollbar-thumb {
 
     .back-card-info {
         color: white;
-        font-size: 0.8vw;
+        font-size: 1.5vw;
         position: absolute;
         right: 30px;
-        top: 900px;
+        top: 58px;
     }
 
     .card-logo {
@@ -415,33 +504,37 @@ body::-webkit-scrollbar-thumb {
         width: 65%;
         height: 60px;
     }
+    /*ERRORS*/
 
-    .card-info .number {
-        color: white;
-        font-size: 2vw;
+    .input-error {
+        border: 1px solid #d64040;
     }
-    
-    .card-info .name {
-        color: white;
-        font-size: 1.5vw;
+
+    .text-error {
         margin-top: 10px;
-        display: inline-block;
+        font-size: 10px;
+        color: #d64040;
+        width: 148.297px;
+        height: 21px;
     }
-    
-    .card-info .date {
-        color: white;
-        font-size: 0.8vw;
+
+    .text-error-number {
         margin-top: 10px;
-        display: inline-block;
-        position: absolute;
-        right: 30px;
+        font-size: 10px;
+        color: #d64040;
+        width: 200px;
+        height: 21px;
     }
-    
-    .back-card-info {
-        color: white;
-        font-size: 0.8vw;
-        position: absolute;
-        right: 60px;
-        top: 110px;
+
+    .text-error-cvc {
+        display: inline-block;
+        position: relative;
+        text-align: start;
+        top: 0px;
+        left: 0px;
+        width: 191.297px;
+        height: 21px;
+        font-size: 10px;
+        color: #d64040;
     }
 }
