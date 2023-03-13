@@ -96,8 +96,8 @@ p {
     position: absolute;
     height: 800px;
     width: 55%;
-    right: 12%;
-    top: 8%;
+    right: 5%;
+    top: 2%;
     padding: 200px 0px;
 }
 
@@ -166,7 +166,7 @@ input::-webkit-inner-spin-button {
 .confirm-btn {
     margin-top: 20px;
     display: block;
-    background-color: #65018d;
+    background-color: #2e0041;
     color: white;
     outline: none;
     border: 0px solid transparent;
@@ -176,7 +176,7 @@ input::-webkit-inner-spin-button {
 }
 
 .confirm-btn:hover {
-    background-color: #4d006b;
+    background-color: #1d0129;
 }
 
 /*ERRORS*/
@@ -389,6 +389,12 @@ body::-webkit-scrollbar-thumb {
         font-size: 10px;
         color: #d64040;
     }
+
+    .input-title {
+        font-size: 12px;
+        font-weight: 500;
+        letter-spacing: 2px;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -496,7 +502,7 @@ body::-webkit-scrollbar-thumb {
     .confirm-btn {
         margin-top: 20px;
         display: block;
-        background-color: #65018d;
+        background-color: #2e0041;
         color: white;
         outline: none;
         border: 0px solid transparent;
