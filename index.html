@@ -39,17 +39,17 @@
     <div class="right-container">
 
       <p class="input-title">CARDHOLDER NAME</p>
-      <input type="text" class="input" maxLength="30" placeholder="Fullname" OnInput="getCardName()">
+      <input type="text" class="input" maxLength="30" placeholder="e.g. Gustavo Gutierrez" OnInput="getCardName()">
       <p class="text-error" id="name-error"></p>
 
       <p class="input-title section-spacing">CARD NUMBER</p>
-      <input type="text" maxLength="16" class="input" placeholder="Ex: 1234567891012131" onInput="getCardNumber()" id="card-number-input">
+      <input type="text" maxLength="16" class="input" placeholder="e.g. 1234567891012131" onInput="getCardNumber()" id="card-number-input">
       <p class="text-error-number" id="card-number-error"></p>
 
       <p class="input-title section-spacing" style="display: inline-block;">EXP. DATE (MM/YY)</p> <p class="input-title section-spacing" style="display: inline-block; margin-left: 50px">CVC</p><br>
-      <input type="text" maxLength="2" min="01" max="12" class="input-date" onInput="getMonthDate()" id="card-month-input">
-      <input type="text" maxLength="2" max="99" class="input-date" onInput="getYearDate()" id="card-year-input" style="margin-left: 10px;">
-      <input type="text" maxLength="3" min="000" max="999" class="input-cvc" onInput="getCVC()" id="card-date" style="margin-left: 20px;">
+      <input type="text" maxLength="2" min="01" max="12" class="input-date" onInput="getMonthDate()" id="card-month-input" placeholder="MM">
+      <input type="text" maxLength="2" max="99" class="input-date" onInput="getYearDate()" id="card-year-input" style="margin-left: 10px;" placeholder="YY">
+      <input type="text" maxLength="3" min="000" max="999" class="input-cvc" onInput="getCVC()" id="card-date" style="margin-left: 20px;" placeholder="e.g. 123">
       <br>
       <p class="text-error" style="display: inline-block" id="date-error"></p>
       <p class="text-error-cvc" id="cvc-error"></p>
