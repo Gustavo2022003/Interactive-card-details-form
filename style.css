@@ -1,0 +1,447 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+
+* {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.name {
+    letter-spacing: 1.5px;
+}
+
+.left-col {
+    height: 100vh;
+    width: 30%;
+    background-image: url(images/bg-main-desktop.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    display: inline-block;
+}
+
+.card-front {
+    background-image: url(images/bg-card-front.png);
+    height: 245px;
+    width: 447px;
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    padding: 20px;
+}
+
+.card-back {
+    background-image: url(images/bg-card-back.png);
+    height: 245px;
+    width: 447px;
+    position: absolute;
+    top: 500px;
+    left: 70%;
+}
+
+.card-info {
+    margin-top: 80px;
+    overflow: hidden;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+.card-info .number {
+    color: white;
+    font-size: 1.5vw;
+}
+
+.card-info .name {
+    color: white;
+    font-size: 0.8vw;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.card-info .date {
+    color: white;
+    font-size: 0.8vw;
+    margin-top: 10px;
+    display: inline-block;
+    position: absolute;
+    right: 30px;
+}
+
+.back-card-info {
+    color: white;
+    font-size: 0.8vw;
+    position: absolute;
+    right: 60px;
+    top: 110px;
+}
+
+/*Right column*/
+
+.right-col {
+    display: inline-block;
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    top: 0;
+}
+
+.right-container {
+    position: absolute;
+    height: 800px;
+    width: 55%;
+    right: 12%;
+    top: 8%;
+    padding: 200px 0px;
+}
+
+/*Inputs*/
+.input-title {
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.input {
+    width: 61%;
+    height: 50px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 1px solid #65018d;
+    padding-left: 15px;
+    display: block;
+}
+
+.input-date {
+    width: 13%;
+    height: 50px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 1px solid #65018d;
+    padding-left: 15px;
+}
+
+.input-cvc {
+    width: 30%;
+    height: 50px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 1px solid #65018d;
+    padding-left: 15px;
+}
+
+.input-cvc:focus {
+    outline: #65018d;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+.section-spacing {
+    margin-top: 25px;
+}
+
+.input:focus {
+    outline: #65018d;
+}
+
+.input-date:focus {
+    outline: #65018d;
+}
+
+.inline-date {
+    display: inline-block;
+}
+
+.confirm-btn {
+    margin-top: 20px;
+    display: block;
+    background-color: #65018d;
+    color: white;
+    outline: none;
+    border: 0px solid transparent;
+    border-radius: 10px;
+    width: 61%;
+    height: 50px;
+}
+
+.confirm-btn:hover {
+    background-color: #4d006b;
+}
+
+/*ERRORS*/
+
+.input-error {
+    border: 1px solid #d64040;
+}
+
+.text-error {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #d64040;
+    width: 191.297px;
+    height: 21px;
+}
+
+.text-error-number {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #d64040;
+    width: 200px;
+    height: 21px;
+}
+
+.text-error-cvc {
+    display: inline-block;
+    position: relative;
+    text-align: start;
+    top: 0px;
+    left: 40px;
+    width: 191.297px;
+    height: 21px;
+    font-size: 14px;
+    color: #d64040;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+    color: #00000063;
+}
+
+.footer a {
+    color: black;
+    text-decoration: none;
+}
+
+body::-webkit-scrollbar {
+    width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0); 
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #4d006b;
+    border-radius: 0px;
+    width: 10px;      
+}
+
+@media screen and (max-width: 1550px) {
+    .card-front {
+        background-image: url(images/bg-card-front.png);
+        height: 190px;
+        width: 347px;
+        position: absolute;
+        top: 200px;
+        left: 50%;
+        padding: 20px;
+        background-size: cover;
+        background-size: contain;
+    }
+    
+    .card-back {
+        background-image: url(images/bg-card-back.png);
+        height: 190px;
+        width: 347px;
+        position: absolute;
+        top: 440px;
+        left: 70%;
+        background-size: cover;
+        background-size: contain;
+    }
+
+    .card-info {
+        margin-top: 30px;
+        overflow: hidden;
+    }
+
+    .back-card-info {
+        color: white;
+        font-size: 0.8vw;
+        position: absolute;
+        right: 40px;
+        top: 84px;
+    }
+
+    .card-logo {
+        width: 80px;
+    }
+}
+
+@media screen and (max-width: 1190px) {
+    .card-front {
+        background-image: url(images/bg-card-front.png);
+        height: 135px;
+        width: 246px;
+        position: absolute;
+        top: 300px;
+        left: 50%;
+        padding: 20px;
+        background-size: cover;
+        background-size: contain;
+    }
+    
+    .card-back {
+        background-image: url(images/bg-card-back.png);
+        height: 135px;
+        width: 246px;
+        position: absolute;
+        top: 460px;
+        left: 70%;
+        background-size: cover;
+        background-size: contain;
+    }
+
+    .card-info {
+        margin-top: 10px;
+        overflow: hidden;
+    }
+
+    .back-card-info {
+        color: white;
+        font-size: 0.8vw;
+        position: absolute;
+        right: 30px;
+        top: 59px;
+    }
+
+    .card-logo {
+        width: 40px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .left-col {
+        height: 17vh;
+        width: 100%;
+        background-image: url(images/bg-main-desktop.png);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        display: block;
+    }
+
+    /*Right column*/
+
+    .right-col {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+    }
+
+    .right-container {
+        position: relative;
+        height: 800px;
+        width: 55%;
+        left: 35%;
+        top: 20%;
+        padding: 200px 0px;
+    }
+
+    .card-front {
+        background-image: url(images/bg-card-front.png);
+        height: 135px;
+        width: 246px;
+        position: absolute;
+        top: 140px;
+        left: 30%;
+        padding: 20px;
+        background-size: cover;
+        background-size: contain;
+    }
+    
+    .card-back {
+        background-image: url(images/bg-card-back.png);
+        height: 135px;
+        width: 246px;
+        position: absolute;
+        top: 260px;
+        left: 40%;
+        background-size: cover;
+        background-size: contain;
+    }
+
+    .card-info {
+        margin-top: 10px;
+        overflow: hidden;
+    }
+
+    .back-card-info {
+        color: white;
+        font-size: 0.8vw;
+        position: absolute;
+        right: 30px;
+        top: 900px;
+    }
+
+    .card-logo {
+        width: 40px;
+    }
+
+    .input {
+        width: 65%;
+        height: 50px;
+        margin-top: 10px;
+        border-radius: 10px;
+        border: 1px solid #65018d;
+        padding-left: 15px;
+        display: block;
+    }
+
+    .confirm-btn {
+        margin-top: 20px;
+        display: block;
+        background-color: #65018d;
+        color: white;
+        outline: none;
+        border: 0px solid transparent;
+        border-radius: 10px;
+        width: 65%;
+        height: 60px;
+    }
+
+    .card-info .number {
+        color: white;
+        font-size: 2vw;
+    }
+    
+    .card-info .name {
+        color: white;
+        font-size: 1.5vw;
+        margin-top: 10px;
+        display: inline-block;
+    }
+    
+    .card-info .date {
+        color: white;
+        font-size: 0.8vw;
+        margin-top: 10px;
+        display: inline-block;
+        position: absolute;
+        right: 30px;
+    }
+    
+    .back-card-info {
+        color: white;
+        font-size: 0.8vw;
+        position: absolute;
+        right: 60px;
+        top: 110px;
+    }
+}
