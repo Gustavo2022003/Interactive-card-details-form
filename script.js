@@ -35,38 +35,32 @@ function containsOnlyLetters(str) {
 }
 
 function getCardNumber() {
-    let number = document.getElementById("card-number-input");
-    let numberValue = number.value;
+    let numberInput = document.getElementById("card-number-input");
+    let numberValue = numberInput.value;
     let numberOnCard = document.querySelectorAll("#card-number span");
-    
+
     numberOnCard[0].innerText = numberValue.slice(0, 4);
     numberOnCard[1].innerText = numberValue.slice(4, 8);
     numberOnCard[2].innerText = numberValue.slice(8, 12);
     numberOnCard[3].innerText = numberValue.slice(12, 16);
 
-    if (number.value == "") {
+    if (numberValue == "") {
         numberOnCard[0].innerText = "0000"; 
         numberOnCard[1].innerText = "0000"; 
         numberOnCard[2].innerText = "0000";  
         numberOnCard[3].innerText = "0000";
-        let number = document.getElementById("card-number-input");
-        number.classList.remove("input-error");
+        numberInput.classList.remove("input-error");
         let error = document.getElementById("card-number-error");
         error.innerText = "";
-    }
-    
-    if (containsOnlyNumbers(numberValue) == false) {
-        let number = document.getElementById("card-number-input");
-        number.classList.add("input-error");
+    } else if (!/^\d+$/.test(numberValue)) {
+        numberInput.classList.add("input-error");
         let error = document.getElementById("card-number-error");
         error.innerText = "Wrong format, numbers only";
     } else {
-        let number = document.getElementById("card-number-input");
-        number.classList.remove("input-error");
+        numberInput.classList.remove("input-error");
         let error = document.getElementById("card-number-error");
         error.innerText = "";
     }
-
 }
 
 function getMonthDate() {
